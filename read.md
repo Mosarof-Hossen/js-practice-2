@@ -53,3 +53,70 @@ console.log(person.age); // Output: undefined
 → The property age doesn’t exist.
 
 🔸 Difference between undefined and null:
+
+
+{====>>>>truthy data<<<====}
+🔹 Falsy values
+
+In JavaScript, these values are always considered false when used in a condition:
+
+false
+
+0 (zero)
+
+"" (empty string)
+
+null
+
+undefined
+
+NaN
+
+👉 Example:
+
+if (0) {
+  console.log("This will not run"); // 0 is falsy
+}
+
+🔹 Truthy values
+
+Anything that is not falsy is considered truthy.
+
+Examples of truthy values:
+
+true
+
+Any non-zero number → 1, -5, 3.14
+
+Any non-empty string → "hello", "0", "false"
+
+Objects → {}, []
+
+Functions
+
+👉 Example:
+
+if ("hello") {
+  console.log("This will run"); // non-empty string is truthy
+}
+
+🔹 How it works with !
+
+The ! operator flips truthy/falsy:
+
+let data = "hi";
+
+if (!data) {
+  console.log("Falsy");
+} else {
+  console.log("Truthy");
+}
+
+
+➡️ Output: "Truthy" (because "hi" is a non-empty string, so it’s truthy).
+
+👉 Rule of thumb:
+
+Falsy = very few special values (false, 0, "", null, undefined, NaN).
+
+Everything else is truthy.
