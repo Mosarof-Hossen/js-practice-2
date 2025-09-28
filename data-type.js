@@ -22,3 +22,21 @@ const isKnown=undefined;  //undefined // usually you should not set value to und
 let isLocal;    //undefined
 
 const merit=null; ///null value not set
+
+//Non-Primitive Data Type 
+const obName={
+    name:"Mosarof", price:500
+}
+const arName=[32,64,744]
+
+const fnName=()=>{
+    const ab="Mosarof"
+    return ab;
+}
+console.log(fnName)
+// {===>>Non-Primitive<<===}Nn-Primitive (Reference0)Data Types in js 
+// 1|(Object)==>> A collection of kay value
+// 2|(Array)===>> A special kind of object for ordered list
+// 3|(Function)===>>> in javascript,function are objct to
+// 4|(Date)==>>> Built in object for working with dates and times
+
